@@ -10,7 +10,7 @@ export const DisplaySection = () => {
     })
   }
   return (
-    <div className={"display-section wrapper"} style={{opacity: 1}}>
+    <div className={"display-section wrapper"}>
       <h2 className={"title"}>New</h2>
       <p className={"text"}>Brilliant</p>
       <span className={"description"}>
