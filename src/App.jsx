@@ -1,23 +1,20 @@
-import React, { useState } from 'react'
-import './App.css'
-import {Navigation} from "./components/Navigation.jsx";
-import {Jumbatron} from "./components/Jumbatron.jsx";
-import {Product} from "./components/Product.jsx";
-import {Gun} from "./components/Gun.jsx";
+import {Nav} from "./components/Nav.jsx";
+import {Jumbotron} from "./components/Jumbotron.jsx";
+import {SoundSection} from "./components/SoundSection.jsx";
+import {DisplaySection} from "./components/DisplaySection.jsx";
 import {WebgiViewer} from "./components/WebgiViewer.jsx";
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <Navigation/>
-      <Jumbatron />
-      <Product />
-      <Gun />
+    <div className="App">
+      <Nav />
+      <Jumbotron />
+      <SoundSection />
+      <DisplaySection />
       <WebgiViewer />
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
